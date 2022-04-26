@@ -1,0 +1,27 @@
+{
+  "name": "study",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "server": "nodemon ./bin/www",
+    "client": "cd ../client & npm start",
+    "start": "concurrently --kill-others-on-fail \"npm run-script server\" \"npm run-script client\""
+  },
+  "dependencies": {
+    "axios": "^0.26.1",
+    "concurrently": "^7.1.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "express": "^4.16.4",
+    "http-errors": "^1.6.3",
+    "morgan": "^1.9.1",
+    "mysql2": "^2.3.3",
+    "pug": "^3.0.2",
+    "sequelize": "^6.19.0",
+    "styled-components": "^5.3.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
