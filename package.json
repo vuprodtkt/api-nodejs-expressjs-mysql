@@ -6,7 +6,7 @@
     "server": "nodemon ./bin/www",
     "client": "cd ../client & npm start",
     "start": "concurrently --kill-others-on-fail \"npm run-script server\" \"npm run-script client\"",
-    "deploy": "git add . & git commit --allow-empty -am $date & git push"
+    "deploy": "node deploy"
   },
   "dependencies": {
     "axios": "^0.26.1",
@@ -23,6 +23,7 @@
     "styled-components": "^5.3.5"
   },
   "devDependencies": {
+    "moment": "^2.29.3",
     "nodemon": "^2.0.15"
   }
 }
